@@ -279,7 +279,7 @@ nav {
 .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
 }
 
 .hebergements-cards .card {
@@ -532,14 +532,16 @@ nav {
     .liste-filtres {
         display: grid; 
         grid-template-columns: repeat(2, 1fr); 
-        gap: 20px;
-        text-wrap: nowrap;
+        gap: 20px;  
+        margin-right: auto;  
+        margin-left: auto;
     }
 
     .liste-filtres li {
         font-size: 14px;
         padding: 4px 15px 4px 5px;
         min-width: 100px;
+        text-wrap: nowrap;
     }
 
     /* hébergements et populaires mobile */
