@@ -91,7 +91,7 @@ nav {
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
     height: auto;
     padding-top: 14px;
 }
@@ -103,6 +103,8 @@ nav {
     display: flex;
     column-gap: 20%;
     padding-left: 20px;
+    padding-bottom: 20px;
+
 }
 
 .liste-liens {
@@ -137,7 +139,7 @@ nav {
     justify-content: center;
     padding: 12px;
     background-color: #F2F2F2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
 }
 .icone-centree {
     display: flex;
@@ -169,6 +171,7 @@ nav {
 #destination {
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 10px;
     border-top: #F2F2F2 solid 2px;
     border-bottom: #F2F2F2 solid 2px;
     border-left: none;
@@ -380,7 +383,7 @@ nav {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024.3px) {
 
     .liste-filtres {
         padding-left: 0;
@@ -390,8 +393,12 @@ nav {
         flex-direction: column;
     }
 
-    .hebergements {
+    #hebergements {
         width: 100%;
+    }
+
+    .hebergements-cards {
+        grid-gap: 30px;
     }
 
     .hebergements-cards .card-title {
@@ -403,7 +410,6 @@ nav {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -464,6 +470,7 @@ nav {
         .main-container {
             padding: 0;
         }
+        
 
     /* partie header mobile */
     .barre-navigation {
@@ -525,12 +532,14 @@ nav {
     .liste-filtres {
         display: grid; 
         grid-template-columns: repeat(2, 1fr); 
-        font-size: 14px; 
         gap: 20px;
         text-wrap: nowrap;
     }
 
     .liste-filtres li {
+        font-size: 14px;
+        padding: 4px 15px 4px 5px;
+        min-width: 100px;
     }
 
     /* hébergements et populaires mobile */
@@ -560,6 +569,10 @@ nav {
         background-color: white;
     }
 
+    .card-rating {
+        position: static;
+    }
+
     /* activités mobile */
 
     .activites {
@@ -577,7 +590,5 @@ nav {
     /* footer mobile */
     .liens-utiles {
         flex-direction: column;
-        margin-bottom: 30px;
-        background-color: white;
     }
 }
