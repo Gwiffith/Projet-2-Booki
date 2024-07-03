@@ -266,11 +266,6 @@ nav {
 }
 
 /****** Hebergements ***********/
-.hebergements {
-    width: 2fr;
-    height: 100%;
-}
-
 .hebergements-titre h2 {
     margin-top: 0;
     margin-bottom: 33px;
@@ -306,9 +301,6 @@ nav {
 }
 
 /****** Populaires ***********/
-.populaires {
-    width: 1fr;
-}
 
 .populaires-title {
     display: flex;
